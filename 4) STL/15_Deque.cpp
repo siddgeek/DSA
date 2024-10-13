@@ -47,6 +47,7 @@ int main(){
     cout<<endl;
 
     d.erase(d.end()-2, d.end());
+    //d.end() last element ke baad ka addresss return karta hai.
 
     for(int x: d){
         cout<<x<<" ";
