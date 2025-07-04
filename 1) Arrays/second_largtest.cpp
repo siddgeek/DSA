@@ -1,6 +1,26 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+int findSecondLargest(int n, vector<int> &arr)
+{
+     int largest = INT_MIN;
+    int secondLargest = INT_MIN;
+
+    for(int i = 0; i < n; i++) {
+        if(arr[i] > largest) {
+            secondLargest = largest;
+            largest = arr[i];
+        }
+        else if (arr[i] < largest && arr[i] > secondLargest) {
+            secondLargest = arr[i];
+        }
+    }
+
+    // If no second largest is found, return -1
+    if (secondLargest == INT_MIN)
+        return -1;
+}    
+
 int findSecondlar(vector<int> v){
     int largest = 1;      
     for(int i=0; i<v.size()-1; i++){
