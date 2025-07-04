@@ -28,7 +28,7 @@ int main(){
     d.push_back(5);
     d.push_back(0);
     d.push_back(10);
-    d.push_back(9);
+    d.push_back(9); 
     d.push_front(2);
 
     for(int x: d){

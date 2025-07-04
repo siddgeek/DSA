@@ -43,7 +43,7 @@ int main(){
     }
     cout<<endl;
 
-    cout<<"Size of the list "<<l.size();
+    cout<<"Size of the list "<<l.size()<<endl;
 
     cout<<"list is empty..?? "<<l.empty();
 }
